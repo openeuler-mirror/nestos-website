@@ -1,0 +1,73 @@
+
+$menu-text:#858585;
+$hover-back: #1e2e38;
+$ele-main: #002fa7;
+// el-header
+.el-header {
+  padding: 0;
+}
+
+// el-menu
+.el-menu {
+  border: none;
+  background-color: $hover-back;
+}
+.el-menu-item {
+  color: $menu-text;
+  &:hover {
+    background-color: $hover-back;
+    color: #fff;
+  }
+}
+.el-menu-item.is-active {
+  color: #fff;
+}
+
+
+.el-sub-menu__title {
+  color: $menu-text;
+  &:hover {
+  background-color: $hover-back;
+    color: #fff;
+ }
+}
+.el-sub-menu.is-active .el-sub-menu__title,
+.el-menu--collapse .el-sub-menu.is-active .el-sub-menu__title {
+  // background-color: #fff;
+  color: #fff;
+}
+
+// el-tab
+.el-tabs__nav-wrap::after {
+  height: 0;
+}
+.el-tabs__item.is-active {
+  color: $ele-main;
+}
+.el-tabs__active-bar {
+  background-color: $ele-main;
+}
+.el-tabs__item:hover {
+  color: $ele-main;
+}
+.el-tabs__item {
+  font-size: 18px;
+}
+.el-tabs__content {
+  width: calc(100% + 20px);
+  margin-left: -10px;
+  padding: 4px 0;
+  overflow: auto;
+}
+
+// el-checkbox
+.el-radio__input.is-checked+.el-radio__label {
+  color: $ele-main;
+}
+.el-radio__inner:hover {
+   border-color: $ele-main; 
+}
+.el-radio__input.is-checked .el-radio__inner {
+    background-color: $ele-main;
+    border-color: $ele-main;
+}
