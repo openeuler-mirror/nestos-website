@@ -2,8 +2,7 @@
   <div class="document">
     <div class="content">
       <div class="desc">
-        <span class="title">{{  $t(title)  }}</span>
-        <span class="link" @click="goLink(link)">{{  link  }}</span>
+        <span class="title" @click="goLink(link)">{{ $t(title) }}</span>
       </div>
       <div class="back"></div>
       <img :src="IMG" alt="">
@@ -63,11 +62,6 @@ const goLink = (path) => {
 
       .title {
         font-weight: 600;
-      }
-
-      .link {
-        font-size: 14px;
-        color: rgba(0, 0, 0, .5);
 
         &:hover {
           color: #357aef;

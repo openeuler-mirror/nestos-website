@@ -7,11 +7,17 @@
         <v-cards @handleScroll="handleScroll" />
 
         <div class="description">
-          <p>{{  $t(`card.description`)  }}</p>
+          <p>{{ $t(`card.description`) }}</p>
         </div>
+
+        <mini-title :inside-title="t('minititle.planIn')" :outside-title="t('minititle.planOut')" />
+        <img class="roadmap box_shadow" src="~@/assets/2022_plan.png" alt="">
 
         <mini-title :inside-title="t('minititle.archIn')" :outside-title="t('minititle.archOut')" />
         <v-architecture />
+
+        <mini-title :inside-title="t('minititle.comIn')" :outside-title="t('minititle.comOut')" />
+        <v-comparision />
 
         <mini-title :inside-title="t('minititle.resourceIn')" :outside-title="t('minititle.resourceOut')" />
         <v-resource id="resource" />
@@ -30,6 +36,7 @@ import vFooter from '@/components/Footer.vue';
 import vBanner from './Banner.vue';
 import vCards from './Cards.vue';
 import vArchitecture from './Architecture.vue';
+import vComparision from './Comparision.vue';
 import vResource from './Resource.vue';
 import { onMounted } from 'vue';
 import AOS from 'aos';
@@ -69,6 +76,10 @@ const handleScroll = () => {
       width: 74%;
       margin: 0 auto;
       padding: 3% 0;
+
+      .roadmap {
+        width: 100%;
+      }
 
       .description {
         width: 100%;

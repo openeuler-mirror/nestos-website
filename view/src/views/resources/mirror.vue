@@ -6,7 +6,7 @@
         <template #title>
           <el-icon class="header-icon">
             <Folder />
-          </el-icon>&nbsp;{{  item.dateTitle  }}
+          </el-icon>&nbsp;{{ item.dateTitle }}
         </template>
         <div class="content">
           <el-radio-group v-model="mirrorArch">
@@ -14,10 +14,10 @@
             <el-radio label="aarch64" size="large">aarch64</el-radio>
           </el-radio-group>
           <div v-if="mirrorArch === 'x86_64'" class="linkDiv">
-            <span class="linkSpan" v-for="link in item.x86List" @click="goLink(link)">{{  link  }}</span>
+            <span class="linkSpan" v-for="link in item.x86List" @click="goLink(link.path)">{{ link.name }}</span>
           </div>
           <div v-else class="linkDiv">
-            <span class="linkSpan" v-for="link in item.armList" @click="goLink(link)">{{  link  }}</span>
+            <span class="linkSpan" v-for="link in item.armList" @click="goLink(link.path)">{{ link.name }}</span>
           </div>
         </div>
       </el-collapse-item>
