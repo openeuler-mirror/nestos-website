@@ -5,11 +5,25 @@
 export const docList = [
   {
     dateTitle: '2022-03-29',
-    x86List: ['http://124.126.103.127/nestos20220329/x86_64/nestos-22.03.20220329.dev.0-live.x86_64.iso',
-      'http://124.126.103.127/nestos20220329/x86_64/nestos-22.03.20220329.dev.0-qemu.x86_64.qcow2',
+    x86List: [
+      {
+        name: 'NestOS-22.03 ISO下载',
+        path: 'http://124.126.103.127/nestos20220329/x86_64/nestos-22.03.20220329.dev.0-live.x86_64.iso'
+      },
+      {
+        name: 'NestOS-22.03 QCOW2下载',
+        path: 'http://124.126.103.127/nestos20220329/x86_64/nestos-22.03.20220329.dev.0-qemu.x86_64.qcow2'
+      },
     ],
-    armList: [' http://124.126.103.127/nestos20220329/aarch64/nestos-22.03.20220329.dev.0-live.aarch64.iso',
-      ' http://124.126.103.127/nestos20220329/aarch64/nestos-22.03.20220329.dev.0-qemu.aarch64.qcow2',
+    armList: [
+      {
+        name: 'NestOS-22.03 ISO下载',
+        path: 'http://124.126.103.127/nestos20220329/aarch64/nestos-22.03.20220329.dev.0-live.aarch64.iso'
+      },
+      {
+        name: 'NestOS-22.03 QCOW2下载',
+        path: 'http://124.126.103.127/nestos20220329/aarch64/nestos-22.03.20220329.dev.0-qemu.aarch64.qcow2'
+      },
     ]
   },
 ]
@@ -19,10 +33,15 @@ export const docList = [
 */
 export const docFile = [
   {
+    title: `resource.file.doc`, // 界面文字
+    link: 'http://124.126.103.127/doc/NestOS.pdf', //下载链接
+    IMG: require('@/assets/resource/illustration-file.png') //背景图小图
+  },
+  /* {
     title: `resource.file.doc`,
-    link: 'http://124.126.103.127/doc/NestOS.pdf',
-    IMG: require('@/assets/resource/illustration-file.png')
-  }
+    link: 'http://124.126.103.127/doc/xxx.pdf',
+    IMG: require('@/assets/resource/illustration-xxx.png')
+  } */
 ]
 
 /* 

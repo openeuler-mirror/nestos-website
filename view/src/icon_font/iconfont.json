@@ -1,0 +1,51 @@
+{
+  "id": "3657066",
+  "name": "nestos",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1297942",
+      "name": "操作_自动亮度",
+      "font_class": "caozuo_zidongliangdu",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "7577443",
+      "name": "24gf-shieldCheck",
+      "font_class": "safe",
+      "unicode": "73",
+      "unicode_decimal": 115
+    },
+    {
+      "icon_id": "8651696",
+      "name": "配合工作",
+      "font_class": "peihegongzuo",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "17523090",
+      "name": "配置-终端配置",
+      "font_class": "peizhi-zhongduanpeizhi",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "18468106",
+      "name": "施工配合",
+      "font_class": "shigongpeihe",
+      "unicode": "e6b9",
+      "unicode_decimal": 59065
+    },
+    {
+      "icon_id": "18748999",
+      "name": "开箱即用",
+      "font_class": "kaixiangjiyong",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    }
+  ]
+}
