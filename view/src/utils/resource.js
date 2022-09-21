@@ -34,12 +34,12 @@ export const docList = [
 export const docFile = [
   {
     title: `resource.file.doc`, // 界面文字
-    link: 'http://124.126.103.127/doc/NestOS.pdf', //下载链接
+    path: 'http://124.126.103.127/doc/NestOS.pdf', //下载链接
     IMG: require('@/assets/resource/illustration-file.png') //背景图小图
   },
   /* {
     title: `resource.file.doc`,
-    link: 'http://124.126.103.127/doc/xxx.pdf',
+    path: 'http://124.126.103.127/doc/xxx.pdf',
     IMG: require('@/assets/resource/illustration-xxx.png')
   } */
 ]
@@ -50,17 +50,17 @@ export const docFile = [
 export const fireFile = [
   {
     title: `resource.file.other1`,
-    link: 'http://124.126.103.127/ign/config.ign',
+    path: 'http://124.126.103.127/ign/config.ign',
     IMG: require('@/assets/resource/illustration-file.png')
   },
   /* {
     title: `resource.file.other2`,
-    link: 'https://xxx.com',
+    path: 'https://xxx.com',
     IMG: require('@/assets/resource/illustration-arrow.png')
   },
   {
     title: `resource.file.other3`,
-    link: 'https://xxx.com',
+    path: 'https://xxx.com',
     IMG: require('@/assets/resource/illustration-book.png')
   } */
 ]
@@ -88,3 +88,8 @@ export const cardsLink = [
     LINK: 'https://gitee.com/openeuler/NestOS/issues'
   },
 ]
+
+/* 
+* 性能测试对比地址
+*/
+export const comparision_url = 'https://gitee.com/openeuler/NestOS/blob/master/docs/usr_manual/%E6%80%A7%E8%83%BD%E5%AF%B9%E6%AF%94%E6%B5%8B%E8%AF%95.md';

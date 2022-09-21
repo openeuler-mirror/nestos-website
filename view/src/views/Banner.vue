@@ -4,11 +4,11 @@
     <div class="wrap">
       <div class="banner-text" data-aos="fade-up">
         <p class="banner-text-bg">
-          {{  $t(`banner.backgroundText`)  }}
+          {{ $t(`banner.backgroundText`) }}
         </p>
-        <h1 class="banner-title">{{  $t(`banner.title`)  }}</h1>
+        <h1 class="banner-title">{{ $t(`banner.title`) }}</h1>
         <p class="banner-subtitle">
-          {{  $t(`banner.subtitle`)  }}
+          {{ $t(`banner.subtitle`) }}
         </p>
       </div>
       <div class="banner-illustration" data-aos="fade-down">
@@ -53,11 +53,11 @@
       position: relative;
       margin: auto 0;
 
-      .banner-text-bg {
+      &-bg {
         position: absolute;
         top: 0;
         opacity: 0.14;
-        font-size: 60px;
+        font-size: 62px;
         font-weight: bold;
         user-select: none;
       }

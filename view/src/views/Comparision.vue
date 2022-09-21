@@ -23,10 +23,20 @@
       <el-table-column prop="col7" label="Vs openEuler20.03LTS" width='180' />
       <el-table-column prop="col8" label="Vs centos8" />
     </el-table>
+    <br />
+    <p class="detail">{{$t(`compare.detail`)}}<span class="compare_link"
+        @click="goLink">{{$t(`compare.url_text`)}}</span></p>
   </div>
 </template>
 
 <script setup>
+import { comparision_url } from '@/utils/resource';
+
+// 跳转到性能对比详情页面
+const goLink = () => {
+  window.open(comparision_url, '_blank')
+}
+
 const iSulad_x86 = [
   { col1: '100*create', col2: '817', col3: '1083', col4: '3693', col5: '1340', col6: '-25%', col7: '-78%', col8: '-40%' },
   { col1: '100*start', col2: '1822', col3: '2256', col4: '5947', col5: '3524', col6: '-20%', col7: '-70%', col8: '-49%' },
@@ -54,6 +64,20 @@ const iSulad_arch = [
 
   .table {
     margin: 0 0 16px 0;
+  }
+
+  .detail {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4d4949;
+
+    .compare_link {
+
+      &:hover {
+        cursor: pointer;
+        color: #002f9c;
+      }
+    }
   }
 }
 </style>

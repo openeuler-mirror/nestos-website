@@ -21,7 +21,6 @@ const IMG = ['#icon-kaixiangjiyong', '#icon-peizhi-zhongduanpeizhi', '#icon-safe
 <style lang="scss" scoped>
 .arch {
   width: 100%;
-
   background-color: #fff;
   box-shadow: 0 1px 5px rgba(45, 47, 51, 0.1);
   text-align: center;
@@ -31,13 +30,13 @@ const IMG = ['#icon-kaixiangjiyong', '#icon-peizhi-zhongduanpeizhi', '#icon-safe
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 
     &-item {
-      width: 28%;
-      height: 280px;
-      margin: 20px 0;
-      padding: 6px 16px;
+      width: 24%;
+      height: 170px;
+      margin: 20px 14px;
+      padding: 6px 12px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -47,8 +46,8 @@ const IMG = ['#icon-kaixiangjiyong', '#icon-peizhi-zhongduanpeizhi', '#icon-safe
       &-img {
         display: flex;
         align-items: center;
-        width: 20%;
-        height: 20%;
+        width: 30%;
+        height: 32%;
 
         .icon {
           width: 100%;
@@ -58,17 +57,16 @@ const IMG = ['#icon-kaixiangjiyong', '#icon-peizhi-zhongduanpeizhi', '#icon-safe
 
       &-title {
         display: inline-block;
-        font-size: 18px;
-        padding: 10px 0;
+        font-size: 20px;
+        padding: 6px 0 10px 0;
         font-weight: bold;
         color: #4d4949;
       }
 
       &-desc {
         display: inline-block;
-        font-size: 14px;
-        text-align: left;
-        // text-indent: 2rem;
+        font-size: 16px;
+        text-align: justify;
       }
     }
 

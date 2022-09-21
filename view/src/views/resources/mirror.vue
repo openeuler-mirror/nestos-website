@@ -14,10 +14,10 @@
             <el-radio label="aarch64" size="large">aarch64</el-radio>
           </el-radio-group>
           <div v-if="mirrorArch === 'x86_64'" class="linkDiv">
-            <span class="linkSpan" v-for="link in item.x86List" @click="goLink(link.path)">{{ link.name }}</span>
+            <span class="linkSpan" v-for="link in item.x86List" @click="goLink(link)">{{ link.name }}</span>
           </div>
           <div v-else class="linkDiv">
-            <span class="linkSpan" v-for="link in item.armList" @click="goLink(link.path)">{{ link.name }}</span>
+            <span class="linkSpan" v-for="link in item.armList" @click="goLink(link)">{{ link.name }}</span>
           </div>
         </div>
       </el-collapse-item>
@@ -29,9 +29,15 @@
 import { ref } from 'vue';
 import { Folder } from '@element-plus/icons-vue';
 import { docList } from '@/utils/resource';
+import { addClickBuriedData } from '@/utils/index';
+import axios from 'axios';
 const mirrorArch = ref('x86_64');
-const goLink = (path) => {
-  window.open(path, '_blank');
+const goLink = (item) => {
+  window.open(item.path, '_blank');
+  /* addClickBuriedData(item, 'nestos镜像下载')
+  axios.get('/clickBuried?search_tag=test').then(res => {
+    console.log(res.data, '埋点')
+  }) */
 }
 </script>
 
