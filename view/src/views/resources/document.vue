@@ -1,7 +1,7 @@
 <template>
   <div class="fireContent">
     <div class="miniContent" v-for="item in docFile">
-      <MiniDocs :title="item.title" :link="item.link" :IMG="item.IMG" />
+      <MiniDocs :item="item" />
     </div>
   </div>
 </template>

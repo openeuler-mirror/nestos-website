@@ -1,7 +1,7 @@
 export default {
   banner: {
     title: 'NestOS',
-    backgroundText: 'SEARCH',
+    backgroundText: 'DISCOVERY',
     subtitle: 'A cloudFoundation operating system based on Euler open source operating system'
   },
   card: {
@@ -13,8 +13,8 @@ export default {
   minititle: {
     planIn: 'programme',
     planOut: 'PROGRAMME',
-    archIn: 'ARCHITECTURE',
-    archOut: 'ARCHITECTURE',
+    archIn: 'characteristic',
+    archOut: 'CHARACTERISTIC',
     comIn: 'comparision',
     comOut: 'COMPARISION',
     docIn: 'DOCUMENTATION',
@@ -37,7 +37,9 @@ export default {
   compare: {
     desc: '使用 NestOS beta 版本横向对比 openEuler21.09、openEuler20.03LTS、Centos8 系统运行 iSulad2.0.10 容器引擎性能。',
     iSulad_x86: 'iSulad（x86_64）测试结果如下：',
-    iSulad_arch: 'iSulad（aarch64）测试结果如下：'
+    iSulad_arch: 'iSulad（aarch64）测试结果如下：',
+    detail: 'Docker、podman的测试数据详见>> ',
+    url_text: '[ 性能对比 ]',
   },
   resource: {
     mirror: 'Mirror',

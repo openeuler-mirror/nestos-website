@@ -9,7 +9,9 @@ import 'element-plus/dist/index.css';
 import './styles/main.scss';
 import './icon_font/iconfont.js';
 import './icon_font/iconfont.css';
-import '@/utils/rem'
+import '@/utils/rem';
+/* import '@/utils/sensors';
+import '@/utils/sensorsdata.min.js'; */
 
 createApp(App).use(router).use(ElementPlus).use(i18n).mount('#app')
 createApp(App).config.globalProperties.AOS = AOS;

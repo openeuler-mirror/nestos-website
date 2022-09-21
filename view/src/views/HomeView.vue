@@ -83,13 +83,13 @@ const handleScroll = () => {
 
       .description {
         width: 100%;
-        font-size: 14px;
+        font-size: 18px;
         box-shadow: 0 1px 5px rgba(45, 47, 51, 0.1);
 
         p {
           text-indent: 1rem;
-          padding: 34px;
-          line-height: 24px;
+          padding: 24px;
+          line-height: 28px;
         }
 
         background-color: #fff;

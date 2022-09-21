@@ -2,16 +2,20 @@
   <div class="document">
     <div class="content">
       <div class="desc">
-        <span class="title" @click="goLink(link)">{{ $t(title) }}</span>
+        <span class="title" @click="goLink(item)">{{ $t(item.title) }}</span>
       </div>
       <div class="back"></div>
-      <img :src="IMG" alt="">
+      <img :src="item.IMG" alt="">
     </div>
   </div>
 </template>
 
 <script setup>
 defineProps({
+  item: {
+    type: Object,
+    default: {}
+  },
   title: {
     type: String,
     default: '',
@@ -25,8 +29,9 @@ defineProps({
     default: require('@/assets/resource/illustration-file.png')
   }
 });
-const goLink = (path) => {
-  window.open(path, '_blank');
+const goLink = (item) => {
+  window.open(item.path, '_blank');
+
 }
 </script>
 
