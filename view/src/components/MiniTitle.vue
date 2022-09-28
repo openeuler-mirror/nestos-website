@@ -43,6 +43,7 @@ defineProps({
   &-inside {
     font-size: 37px;
     font-weight: 400;
+    -webkit-user-select:none;
     user-select: none;
   }
 }

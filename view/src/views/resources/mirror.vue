@@ -30,14 +30,10 @@ import { ref } from 'vue';
 import { Folder } from '@element-plus/icons-vue';
 import { docList } from '@/utils/resource';
 import { addClickBuriedData } from '@/utils/index';
-import axios from 'axios';
 const mirrorArch = ref('x86_64');
 const goLink = (item) => {
   window.open(item.path, '_blank');
-  /* addClickBuriedData(item, 'nestos镜像下载')
-  axios.get('/clickBuried?search_tag=test').then(res => {
-    console.log(res.data, '埋点')
-  }) */
+  addClickBuriedData(item, 'nestos资源')
 }
 </script>
 
