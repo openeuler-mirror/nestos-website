@@ -20,7 +20,8 @@ export function addSearchBuriedData(search_key) {
  * @param item(object): 绑定点击事件的数据
  * @param type(string): 统计类型文字描述
  */
-export function addClickBuriedData1(item, type) {
+export function addClickBuriedData(item, type) {
+  let sensors = (window)['sensorsDataAnalytic201505'];
   const searchKeyObj = {
     search_tag: type,
     search_rank_num: 1,
@@ -36,31 +37,4 @@ export function addClickBuriedData1(item, type) {
   };
 
   sensors.setProfile(sensorObj);
-}
-
-/* openeuler对接，对点击事件埋点
- * @param item(object): 绑定点击事件的数据
- * @param type(string): 统计类型文字描述
- */
-export function addClickBuriedData(item, type) {
-  var xhr = new XMLHttpRequest();
-  xhr.responseType = "json";
-  xhr.open('get', '/openEuler/clickBuried', true)
-  xhr.onload = function (e) {
-    if (xhr.status === 200) {
-      window['returnCitySN'] = xhr.response;
-    } else {
-      window['returnCitySN'] = {
-        query: '',
-        city: '',
-      }
-    }
-  }
-  xhr.onerror = () => {
-    window['returnCitySN'] = {
-      query: '',
-      city: '',
-    }
-  }
-  xhr.send();
 }

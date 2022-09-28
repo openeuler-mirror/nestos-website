@@ -33,6 +33,7 @@
     height: 100%;
     width: 100vw;
     object-fit: fill;
+    -webkit-user-select:none;
     user-select: none;
   }
 
@@ -59,6 +60,7 @@
         opacity: 0.14;
         font-size: 62px;
         font-weight: bold;
+        -webkit-user-select:none;
         user-select: none;
       }
 
@@ -84,6 +86,7 @@
       text-align: right;
 
       img {
+        -webkit-user-select:none;
         user-select: none;
         width: 100%;
       }

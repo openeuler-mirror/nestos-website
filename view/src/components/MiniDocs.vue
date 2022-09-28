@@ -11,6 +11,7 @@
 </template>
 
 <script setup>
+import { addClickBuriedData } from '@/utils/index';
 defineProps({
   item: {
     type: Object,
@@ -31,7 +32,7 @@ defineProps({
 });
 const goLink = (item) => {
   window.open(item.path, '_blank');
-
+  addClickBuriedData(item, 'nestos资源')
 }
 </script>
 
