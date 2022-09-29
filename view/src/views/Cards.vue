@@ -59,11 +59,9 @@ const scrollLink = () => {
     }
 
     &-title {
-      font-size: 15px;
-      // font-weight: 600;
-      color: rgba(0, 0, 0, .6);
+      font-size: 16px;
+      color: #fff;
       text-align: center;
-      padding: 2px 6px;
     }
   }
 }
