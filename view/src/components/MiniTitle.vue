@@ -35,14 +35,15 @@ defineProps({
     top: -25%;
     transform: translateX(-50%);
     color: $gray-text;
-    opacity: .4;
-    font-weight: 500;
+    opacity: .3;
+    font-weight: 300;
     z-index: 1;
+    -webkit-user-select:none;
+    user-select: none;
   }
 
   &-inside {
     font-size: 37px;
-    font-weight: 400;
     -webkit-user-select:none;
     user-select: none;
   }

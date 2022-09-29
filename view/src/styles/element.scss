@@ -2,6 +2,7 @@
 $menu-text:#858585;
 $hover-back: #1e2e38;
 $ele-main: #002fa7;
+$kleinblue8: #406fe7;
 // el-header
 .el-header {
   padding: 0;
@@ -70,4 +71,17 @@ $ele-main: #002fa7;
 .el-radio__input.is-checked .el-radio__inner {
     background-color: $ele-main;
     border-color: $ele-main;
+}
+
+// el-button 
+.el-button {
+  background-color: $ele-main;
+  border-color: $ele-main;
+  padding: 16px;
+  color: #fff;
+  &:hover {
+    background-color: $kleinblue8;
+    border-color: $kleinblue8;
+    color: #fff;
+  }
 }
