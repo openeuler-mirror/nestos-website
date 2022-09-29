@@ -20,7 +20,9 @@ MAINTAINER duyiwei<duyiwei@kylinos.cn>
 
 RUN yum install nginx -y && yum clean all
 COPY --from=Builder /home/openeuler/web/dist/ /usr/share/nginx/html/
-RUN chmod -R 777 /usr/share/nginx/html
+RUN chmod -R 777 /usr/share/nginx/html && \
+    sed -i '131c PASS_MAX_DAYS   18' /etc/login.defs && \
+    sed -i '2,$s/99999/180/g' /etc/shadow
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
 
