@@ -4,25 +4,25 @@
 */
 export const docList = [
   {
-    dateTitle: '2022-03-29',
+    dateTitle: '2022-09-30',
     x86List: [
       {
-        name: 'NestOS-22.03 ISO下载',
-        path: 'http://124.126.103.127/nestos20220329/x86_64/nestos-22.03.20220329.dev.0-live.x86_64.iso'
+        name: 'NestOS-22.09 ISO下载',
+        path: 'http://124.126.103.127/nestos20220930/x86_64/nestos-22.09.20220929.0-live.x86_64.iso'
       },
       {
-        name: 'NestOS-22.03 QCOW2下载',
-        path: 'http://124.126.103.127/nestos20220329/x86_64/nestos-22.03.20220329.dev.0-qemu.x86_64.qcow2'
+        name: 'NestOS-22.09 QCOW2下载',
+        path: 'http://124.126.103.127/nestos20220930/x86_64/nestos-22.09.20220929.0-qemu.x86_64.qcow2'
       },
     ],
     armList: [
       {
-        name: 'NestOS-22.03 ISO下载',
-        path: 'http://124.126.103.127/nestos20220329/aarch64/nestos-22.03.20220329.dev.0-live.aarch64.iso'
+        name: 'NestOS-22.09 ISO下载',
+        path: 'http://124.126.103.127/nestos20220930/aarch64/nestos-22.09.20220929.0-live.aarch64.iso'
       },
       {
-        name: 'NestOS-22.03 QCOW2下载',
-        path: 'http://124.126.103.127/nestos20220329/aarch64/nestos-22.03.20220329.dev.0-qemu.aarch64.qcow2'
+        name: 'NestOS-22.09 QCOW2下载',
+        path: 'http://124.126.103.127/nestos20220930/aarch64/nestos-22.09.20220929.0-qemu.aarch64.qcow2'
       },
     ]
   },
