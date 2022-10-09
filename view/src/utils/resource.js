@@ -8,21 +8,21 @@ export const docList = [
     x86List: [
       {
         name: 'NestOS-22.09 ISO下载',
-        path: 'http://210.22.22.150:4051/nestos20220930/x86_64/nestos-22.09.20220929.0-live.x86_64.iso'
+        path: 'http://124.126.103.127/nestos20220930/x86_64/nestos-22.09.20220929.0-live.x86_64.iso'
       },
       {
         name: 'NestOS-22.09 QCOW2下载',
-        path: 'http://210.22.22.150:4051/nestos20220930/x86_64/nestos-22.09.20220929.0-qemu.x86_64.qcow2'
+        path: 'http://124.126.103.127/nestos20220930/x86_64/nestos-22.09.20220929.0-qemu.x86_64.qcow2'
       },
     ],
     armList: [
       {
         name: 'NestOS-22.09 ISO下载',
-        path: 'http://210.22.22.150:4051/nestos20220930/aarch64/nestos-22.09.20220929.0-live.aarch64.iso'
+        path: 'http://124.126.103.127/nestos20220930/aarch64/nestos-22.09.20220929.0-live.aarch64.iso'
       },
       {
         name: 'NestOS-22.09 QCOW2下载',
-        path: 'http://210.22.22.150:4051/nestos20220930/aarch64/nestos-22.09.20220929.0-qemu.aarch64.qcow2'
+        path: 'http://124.126.103.127/nestos20220930/aarch64/nestos-22.09.20220929.0-qemu.aarch64.qcow2'
       },
     ]
   },
@@ -34,7 +34,7 @@ export const docList = [
 export const docFile = [
   {
     title: `resource.file.doc`, // 界面文字
-    path: 'http://210.22.22.150:4051/doc/NestOS.pdf', //下载链接
+    path: 'http://124.126.103.127/doc/NestOS.pdf', //下载链接
     IMG: require('@/assets/resource/illustration-file.png') //背景图小图
   },
   /* {
@@ -50,7 +50,7 @@ export const docFile = [
 export const fireFile = [
   {
     title: `resource.file.other1`,
-    path: 'http://210.22.22.150:4051/ign/config.ign',
+    path: 'http://124.126.103.127/ign/config.ign',
     IMG: require('@/assets/resource/illustration-file.png')
   },
   /* {
