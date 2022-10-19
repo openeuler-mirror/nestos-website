@@ -4,6 +4,29 @@
 */
 export const docList = [
   {
+    dateTitle: '2022-03-30',
+    x86List: [
+      {
+        name: 'NestOS-22.03 ISO下载',
+        path: 'https://124.126.103.127/nestos20220930/x86_64/nestos-22.09.20220929.0-live.x86_64.iso'
+      },
+      {
+        name: 'NestOS-22.03 QCOW2下载',
+        path: 'https://124.126.103.127/nestos20220930/x86_64/nestos-22.09.20220929.0-qemu.x86_64.qcow2'
+      },
+    ],
+    armList: [
+      {
+        name: 'NestOS-22.03 ISO下载',
+        path: 'https://124.126.103.127/nestos20220930/aarch64/nestos-22.09.20220929.0-live.aarch64.iso'
+      },
+      {
+        name: 'NestOS-22.03 QCOW2下载',
+        path: 'https://124.126.103.127/nestos20220930/aarch64/nestos-22.09.20220929.0-qemu.aarch64.qcow2'
+      },
+    ]
+  },
+  {
     dateTitle: '2022-09-30',
     x86List: [
       {
