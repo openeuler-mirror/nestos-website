@@ -8,7 +8,8 @@ export default {
     nestosTitle: 'Start NestOS',
     downloadTitle: 'Download NestOS',
     issueTitle: 'NestOS Issue',
-    description: 'NestOS cloud base operating system integrates RPM-Ostree support, IGNITION configuration and other technologies, adopts the design idea of dual-system partitioning and atomization update, and uses Nestos-Assembler to quickly integrate and build. It also ADAPTS to K8S, openStack, OKD and other platforms to optimize the bottom noise of container operation. Compared with CENTOS8, the startup speed of container is increased by 30% and the creation speed of container is increased by 60%, which is suitable for the basic operation environment of cloud scenarios mainly based on containerized applications.'
+    description: 'NestOS cloud base operating system integrates RPM-Ostree support, IGNITION configuration and other technologies, adopts the design idea of dual-system partitioning and atomization update, and uses Nestos-Assembler to quickly integrate and build. It also ADAPTS to K8S, openStack, OKD and other platforms to optimize the bottom noise of container operation. Compared with CENTOS8, the startup speed of container is increased by 30% and the creation speed of container is increased by 60%, which is suitable for the basic operation environment of cloud scenarios mainly based on containerized applications.',
+    mainDesc: 'At present, NestOS has released 22.03 and 22.09 versions. Welcome to click [Get NestOS Resources] to download.',
   },
   minititle: {
     planIn: 'programme',

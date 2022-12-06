@@ -7,7 +7,8 @@
         <v-cards @handleScroll="handleScroll" />
 
         <div class="description">
-          <p>{{ $t(`card.description`) }}</p>
+          <p class="description-normal">{{ $t(`card.description`) }}</p>
+          <p class="description-main">{{ $t(`card.mainDesc`) }}</p>
         </div>
 
         <mini-title :inside-title="t('minititle.planIn')" :outside-title="t('minititle.planOut')" />
@@ -86,10 +87,16 @@ const handleScroll = () => {
         font-size: 18px;
         box-shadow: 0 1px 5px rgba(45, 47, 51, 0.1);
 
-        p {
+        &-normal,
+        &-main {
           text-indent: 1rem;
-          padding: 24px;
+          padding: 24px 24px 0;
           line-height: 28px;
+        }
+
+        &-main {
+          padding: 0 24px 24px;
+          font-weight: bold;
         }
 
         background-color: #fff;
