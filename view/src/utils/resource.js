@@ -8,21 +8,21 @@ export const docList = [
     x86List: [
       {
         name: 'NestOS-22.03 ISO下载',
-        path: 'https://pan.baidu.com/s/1kId_9npFomr_f6gVlcyGXg?pwd=nest'
+        path: 'https://1.203.97.152/nestos20220330/x86_64/nestos-22.03.20220329.dev.0-live.x86_64.iso'
       },
       {
         name: 'NestOS-22.03 QCOW2下载',
-        path: 'https://pan.baidu.com/s/1kId_9npFomr_f6gVlcyGXg?pwd=nest'
+        path: 'https://1.203.97.152/nestos20220330/x86_64/nestos-22.03.20220329.dev.0-qemu.x86_64.qcow2'
       },
     ],
     armList: [
       {
         name: 'NestOS-22.03 ISO下载',
-        path: 'https://pan.baidu.com/s/1kId_9npFomr_f6gVlcyGXg?pwd=nest'
+        path: 'https://1.203.97.152/nestos20220330/aarch64/nestos-22.03.20220329.dev.0-live.aarch64.iso'
       },
       {
         name: 'NestOS-22.03 QCOW2下载',
-        path: 'https://pan.baidu.com/s/1kId_9npFomr_f6gVlcyGXg?pwd=nest'
+        path: 'https://1.203.97.152/nestos20220330/aarch64/nestos-22.03.20220329.dev.0-qemu.aarch64.qcow2'
       },
     ]
   },
@@ -31,21 +31,21 @@ export const docList = [
     x86List: [
       {
         name: 'NestOS-22.09 ISO下载',
-        path: 'https://pan.baidu.com/s/1SfsUHy9ABZRBqalpg9SxuQ?pwd=nest'
+        path: 'https://1.203.97.152/nestos20220930/x86_64/nestos-22.09.20220928.0-live.x86_64.iso'
       },
       {
         name: 'NestOS-22.09 QCOW2下载',
-        path: 'https://pan.baidu.com/s/1SfsUHy9ABZRBqalpg9SxuQ?pwd=nest'
+        path: 'https://1.203.97.152/nestos20220930/x86_64/nestos-22.09.20220928.0-qemu.x86_64.qcow2'
       },
     ],
     armList: [
       {
         name: 'NestOS-22.09 ISO下载',
-        path: 'https://pan.baidu.com/s/1SfsUHy9ABZRBqalpg9SxuQ?pwd=nest'
+        path: 'https://1.203.97.152/nestos20220930/aarch64/nestos-22.09.20220928.0-live.aarch64.iso'
       },
       {
         name: 'NestOS-22.09 QCOW2下载',
-        path: 'https://pan.baidu.com/s/1SfsUHy9ABZRBqalpg9SxuQ?pwd=nest'
+        path: 'https://1.203.97.152/nestos20220930/aarch64/nestos-22.09.20220928.0-qemu.aarch64.qcow2'
       },
     ]
   },
@@ -57,7 +57,7 @@ export const docList = [
 export const docFile = [
   {
     title: `resource.file.doc`, // 界面文字
-    path: 'https://pan.baidu.com/s/15DQisTFS2PkS1ibi_AEGRA?pwd=nest', //下载链接
+    path: 'https://1.203.97.152/PublicResources/NestOS.pdf', //下载链接
     IMG: require('@/assets/resource/illustration-file.png') //背景图小图
   },
   /* {
@@ -73,7 +73,7 @@ export const docFile = [
 export const fireFile = [
   {
     title: `resource.file.other1`,
-    path: 'https://pan.baidu.com/s/15DQisTFS2PkS1ibi_AEGRA?pwd=nest',
+    path: 'https://1.203.97.152/nestos-ign/config.ign',
     IMG: require('@/assets/resource/illustration-file.png')
   },
   /* {
