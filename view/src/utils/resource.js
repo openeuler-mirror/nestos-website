@@ -4,7 +4,7 @@
 */
 export const docList = [
   {
-    dateTitle: '2022-03-30',
+    dateTitle: '【22.03-LTS】',
     x86List: [
       {
         name: 'NestOS-22.03 ISO下载',
@@ -27,7 +27,7 @@ export const docList = [
     ]
   },
   {
-    dateTitle: '2022-09-30',
+    dateTitle: '【22.09】',
     x86List: [
       {
         name: 'NestOS-22.09 ISO下载',
@@ -46,6 +46,29 @@ export const docList = [
       {
         name: 'NestOS-22.09 QCOW2下载',
         path: 'https://1.203.97.152/nestos20220930/aarch64/nestos-22.09.20220928.0-qemu.aarch64.qcow2'
+      },
+    ]
+  },
+  {
+    dateTitle: '【22.03-LTS-SP1】',
+    x86List: [
+      {
+        name: 'NestOS-22.03-LTS-SP1 ISO下载',
+        path: 'https://gitee.com/openeuler/NestOS'
+      },
+      {
+        name: 'NestOS-22.03-LTS-SP1 QCOW2下载',
+        path: 'https://gitee.com/openeuler/NestOS'
+      },
+    ],
+    armList: [
+      {
+        name: 'NestOS-22.03-LTS-SP1 ISO下载',
+        path: 'https://gitee.com/openeuler/NestOS'
+      },
+      {
+        name: 'NestOS-22.03-LTS-SP1 QCOW2下载',
+        path: 'https://gitee.com/openeuler/NestOS'
       },
     ]
   },
