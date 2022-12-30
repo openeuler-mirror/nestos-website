@@ -54,21 +54,21 @@ export const docList = [
     x86List: [
       {
         name: 'NestOS-22.03-LTS-SP1 ISO下载',
-        path: 'https://gitee.com/openeuler/NestOS'
+        path: 'https://1.203.97.152/nestos20221230/x86_64/nestos-22.03-LTS-SP1.20221229.0-live.x86_64.iso'
       },
       {
         name: 'NestOS-22.03-LTS-SP1 QCOW2下载',
-        path: 'https://gitee.com/openeuler/NestOS'
+        path: 'https://1.203.97.152/nestos20221230/x86_64/nestos-22.03-LTS-SP1.20221229.0-qemu.x86_64.qcow2'
       },
     ],
     armList: [
       {
         name: 'NestOS-22.03-LTS-SP1 ISO下载',
-        path: 'https://gitee.com/openeuler/NestOS'
+        path: 'https://1.203.97.152/nestos20221230/aarch64/nestos-22.03-LTS-SP1.20221229.0-live.aarch64.iso'
       },
       {
         name: 'NestOS-22.03-LTS-SP1 QCOW2下载',
-        path: 'https://gitee.com/openeuler/NestOS'
+        path: 'https://1.203.97.152/nestos20221230/aarch64/nestos-22.03-LTS-SP1.20221229.0-qemu.aarch64.qcow2'
       },
     ]
   },
