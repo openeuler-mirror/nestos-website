@@ -1,10 +1,13 @@
 # nestos-website
 
 #### 介绍
-nestos-website is the source code repository for the NestOS website
+本仓库为NestOS官网网站仓库 [https://nestos.openeuler.org/](https://nestos.openeuler.org/)
 
-#### 软件架构
-软件架构说明
+
+网站托管在openeuler社区sig-infra，由sig-infra成员与NestOS主要开发者共同维护。
+
+#### 更新说明
+NestOS根据发布版本情况，定期更新下载地址。
 
 
 #### 安装教程
