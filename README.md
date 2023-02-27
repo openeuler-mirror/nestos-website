@@ -1,40 +1,16 @@
 # nestos-website
 
-#### 介绍
-本仓库为NestOS官网网站仓库 [https://nestos.openeuler.org/](https://nestos.openeuler.org/)
+## 介绍
 
+NestOS是一款在openEuler社区孵化的云底座操作系统，专注于提供最佳的容器主机，大规模下安全的运行容器化工作负载。本仓库托管NestOS官网网站源代码 [https://nestos.openeuler.org/](https://nestos.openeuler.org/)
 
-网站托管在openeuler社区sig-infra，由sig-infra成员与NestOS主要开发者共同维护。
+网站托管在openeuler社区sig-infra，由sig-infra成员与NestOS主要开发者共同维护。可在openEuer社区官网点击探索->NestOS 进入该网站。
 
-#### 更新说明
-NestOS根据发布版本情况，定期更新下载地址。
+## 关于本代码仓
 
+- 网站风格整体与openEuler保持一致，根据提供的dockerfile可以以容器化方式部署NestOS网站。
+- 网站更新流程：除必要的网站风格/板块/布局的变化外，根据NestOS版本发布情况与开发计划，会定期更新相关下载资源与NestOS-roadmap相关信息。
 
-#### 安装教程
+## 获取帮助
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+Mail：duyiwei@kylinos.cn   fushanqing@kylinos.cn
