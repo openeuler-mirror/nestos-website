@@ -72,6 +72,29 @@ export const docList = [
       },
     ]
   },
+  {
+    dateTitle: '【23.03】',
+    x86List: [
+      {
+        name: 'NestOS-23.03 ISO下载',
+        path: 'https://1.203.97.152/nestos20230330/x86_64/nestos-23.03.20230403.0-live.x86_64.iso'
+      },
+      {
+        name: 'NestOS-23.03 QCOW2下载',
+        path: 'https://1.203.97.152/nestos20230330/x86_64/nestos-23.03.20230403.0-qemu.x86_64.qcow2'
+      },
+    ],
+    armList: [
+      {
+        name: 'NestOS-23.03 ISO下载',
+        path: 'https://1.203.97.152/nestos20230330/aarch64/nestos-23.03.20230403.0-live.aarch64.iso'
+      },
+      {
+        name: 'NestOS-23.03 QCOW2下载',
+        path: 'https://1.203.97.152/nestos20230330/aarch64/nestos-23.03.20230403.0-qemu.aarch64.qcow2'
+      },
+    ]
+  },
 ]
 
 /* 
