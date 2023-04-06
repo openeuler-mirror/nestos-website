@@ -9,7 +9,7 @@ export default {
     downloadTitle: '获取NestOS资源',
     issueTitle: '我想对NestOS说',
     description: 'NestOS云底座操作系统，集成了rpm-ostree支持、ignition配置等技术，采用双系分区、原子化更新的设计思路，使用nestos-assembler快速集成构建。并针对K8S、openStack、OKD等平台进行适配，优化容器运行底噪，与centos8相比容器启动速度提升了30%，容器创建速度提升了60%，适合作为以容器化应用为主的云场景基础运行环境。',
-    mainDesc: '目前NestOS已发布22.03和22.09版本，欢迎大家点击上方【获取NestOS资源】下载体验。',
+    mainDesc: '目前NestOS已发布23.03版本，欢迎大家点击上方【获取NestOS资源】下载体验。',
   },
   minititle: {
     planIn: '年度规划',
