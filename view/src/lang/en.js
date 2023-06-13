@@ -55,7 +55,7 @@ export default {
   },
   footer: {
     atom_description: 'openEuler is an open source project incubated and operated by the OpenAtom Foundation.',
-    copyright: 'Copyright © 2022 openEuler. All rights reserved.',
+    copyright: 'Copyright © 2023 openEuler. All rights reserved.',
     Trademark: 'Trademark',
     Policy: 'Privacy Policy',
     Legal: 'Legal Notice',

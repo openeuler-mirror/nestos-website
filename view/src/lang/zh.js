@@ -55,7 +55,7 @@ export default {
   },
   footer: {
     atom_description: 'openEuler 是由开放原子开源基金会（OpenAtom Foundation）孵化及运营的开源项目',
-    copyright: '版权所有 © 2022 openEuler 保留一切权利',
+    copyright: '版权所有 © 2023 openEuler 保留一切权利',
     Trademark: '品牌',
     Policy: '隐私政策',
     Legal: '法律说明',
