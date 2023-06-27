@@ -95,6 +95,37 @@ export const docList = [
       },
     ]
   },
+  {
+    dateTitle: '【22.03-LTS-SP2】',
+    x86List: [
+      {
+        name: 'NestOS-22.03-LTS-SP2 ISO下载',
+        path: 'https://gitee.com/openeuler/NestOS'
+      },
+      {
+        name: 'NestOS-22.03-LTS-SP2 QCOW2下载',
+        path: 'https://gitee.com/openeuler/NestOS'
+      },
+      {
+        name: 'NestOS-22.03-LTS-SP2 openStack版本下载',
+        path: 'https://gitee.com/openeuler/NestOS'
+      },     
+    ],
+    armList: [
+      {
+        name: 'NestOS-22.03-LTS-SP2 ISO下载',
+        path: 'https://gitee.com/openeuler/NestOS'
+      },
+      {
+        name: 'NestOS-22.03-LTS-SP2 QCOW2下载',
+        path: 'https://gitee.com/openeuler/NestOS'
+      },
+      {
+        name: 'NestOS-22.03-LTS-SP2 openStack版本下载',
+        path: 'https://gitee.com/openeuler/NestOS'
+      },    
+    ]
+  },
 ]
 
 /* 
