@@ -11,9 +11,6 @@
           <p class="description-main">{{ $t(`card.mainDesc`) }}</p>
         </div>
 
-        <mini-title :inside-title="t('minititle.planIn')" :outside-title="t('minititle.planOut')" />
-        <img class="roadmap box_shadow" src="~@/assets/2022_plan.png" alt="">
-
         <mini-title :inside-title="t('minititle.archIn')" :outside-title="t('minititle.archOut')" />
         <v-architecture />
 
