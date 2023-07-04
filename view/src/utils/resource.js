@@ -100,29 +100,29 @@ export const docList = [
     x86List: [
       {
         name: 'NestOS-22.03-LTS-SP2 ISO下载',
-        path: 'https://gitee.com/openeuler/NestOS'
+        path: 'https://1.203.97.152/nestos20230630/x86_64/nestos-22.03-LTS-SP2.20230704.0-live.x86_64.iso'
       },
       {
         name: 'NestOS-22.03-LTS-SP2 QCOW2下载',
-        path: 'https://gitee.com/openeuler/NestOS'
+        path: 'https://1.203.97.152/nestos20230630/x86_64/nestos-22.03-LTS-SP2.20230704.0-qemu.x86_64.qcow2'
       },
       {
         name: 'NestOS-22.03-LTS-SP2 openStack版本下载',
-        path: 'https://gitee.com/openeuler/NestOS'
+        path: 'https://1.203.97.152/nestos20230630/x86_64/nestos-22.03-LTS-SP2.20230704.0-openstack.x86_64.qcow2'
       },     
     ],
     armList: [
       {
         name: 'NestOS-22.03-LTS-SP2 ISO下载',
-        path: 'https://gitee.com/openeuler/NestOS'
+        path: 'https://1.203.97.152/nestos20230630/aarch64/nestos-22.03-LTS-SP2.20230704.0-live.aarch64.iso'
       },
       {
         name: 'NestOS-22.03-LTS-SP2 QCOW2下载',
-        path: 'https://gitee.com/openeuler/NestOS'
+        path: 'https://1.203.97.152/nestos20230630/aarch64/nestos-22.03-LTS-SP2.20230704.0-qemu.aarch64.qcow2'
       },
       {
         name: 'NestOS-22.03-LTS-SP2 openStack版本下载',
-        path: 'https://gitee.com/openeuler/NestOS'
+        path: 'https://1.203.97.152/nestos20230630/aarch64/nestos-22.03-LTS-SP2.20230704.0-openstack.aarch64.qcow2'
       },    
     ]
   },
