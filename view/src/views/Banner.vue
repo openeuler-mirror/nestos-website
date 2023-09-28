@@ -24,7 +24,7 @@
 .banner-level2 {
   position: relative;
   width: 100%;
-  height: 310px;
+  height: 450px;
   background-size: cover;
   background-repeat: no-repeat;
 

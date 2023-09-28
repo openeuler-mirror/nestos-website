@@ -1,54 +1,138 @@
 <template>
   <div class="compare box_shadow">
-    <p>{{$t(`compare.desc`)}}</p><br />
-    <p class="table_title">{{$t(`compare.iSulad_x86`)}}</p>
-    <el-table class="table" :data="iSulad_x86" border stripe style="width: 100%" height="200">
-      <el-table-column prop="col1" fixed="left" label="operator(ms)" width='180' />
-      <el-table-column prop="col2" label="nestos" width='120' />
-      <el-table-column prop="col3" label="openEuler21.09" width='180' />
-      <el-table-column prop="col4" label="openEuler20.03LTS" width='180' />
-      <el-table-column prop="col5" label="Centos8" width='160' />
-      <el-table-column prop="col6" label="Vs openEuler21.09" width='180' />
-      <el-table-column prop="col7" label="Vs openEuler20.03LTS" width='180' />
-      <el-table-column prop="col8" label="Vs centos8" />
-    </el-table>
-    <p class="table_title">{{$t(`compare.iSulad_arch`)}}</p>
-    <el-table class="table" :data="iSulad_arch" border stripe style="width: 100%" height="200">
-      <el-table-column prop="col1" fixed="left" label="operator(ms)" width='180' />
-      <el-table-column prop="col2" label="nestos" width='120' />
-      <el-table-column prop="col3" label="openEuler21.09" width='180' />
-      <el-table-column prop="col4" label="openEuler20.03LTS" width='180' />
-      <el-table-column prop="col5" label="Centos8" width='160' />
-      <el-table-column prop="col6" label="Vs openEuler21.09" width='180' />
-      <el-table-column prop="col7" label="Vs openEuler20.03LTS" width='180' />
-      <el-table-column prop="col8" label="Vs centos8" />
-    </el-table>
-    <br />
-    <p class="detail">{{$t(`compare.detail`)}}<span class="compare_link"
-        @click="goLink">{{$t(`compare.url_text`)}}</span></p>
+    <div id="profitNum" :style="{ width: '100%', height: '350px' }"></div>
+    <p class="detail">
+      {{ $t(`compare.detail`)
+      }}<span class="compare_link" @click="goLink">{{
+        $t(`compare.url_text`)
+      }}</span>
+    </p>
   </div>
 </template>
 
-<script setup>
-import { comparision_url } from '@/utils/resource';
+<script>
+import { comparision_url } from "@/utils/resource";
+import { reactive, toRefs, onMounted, nextTick } from "vue";
+import * as echarts from "echarts";
 
-// 跳转到性能对比详情页面
-const goLink = () => {
-  window.open(comparision_url, '_blank')
-}
+export default {
+  setup() {
+    // 跳转到性能对比详情页面
+    const goLink = () => {
+      window.open(comparision_url, "_blank");
+    };
+    const state = reactive({
+      xList: ["100*create", "100*start", "100*stop", "100*rm"],
+      yList: [
+        {
+          name: "Podman3.4.4(NestOS)",
+          type: "line",
+          data: [3436, 5496, 2516, 2971],
+        },
+        {
+          name: "Podman3.4.4(CentOS8)",
+          type: "line",
+          lineStyle: {
+            type: "dotted",
+          },
+          data: [6761, 10130, 2532, 3141],
+        },
+        {
+          name: "iSulad2.1.2(NestOS)",
+          type: "line",
+          data: [858, 1885, 457, 501],
+        },
+        {
+          name: "iSulad2.1.2(CentOS8)",
+          type: "line",
+          lineStyle: {
+            type: "dotted",
+          },
+          data: [882, 2123, 497, 566],
+        },
+        {
+          name: "Docker18.09(NestOS)",
+          type: "line",
+          data: [1375, 7397, 1052, 1116],
+        },
+        {
+          name: "Docker18.09(CentOS8)",
+          type: "line",
+          lineStyle: {
+            type: "dotted",
+          },
+          data: [2919, 18400, 465, 6838],
+        },
+      ],
+    });
+    onMounted(() => {
+      nextTick(() => {
+        brokenLine(
+          state.xList,
+          state.yList,
+          "profitNum",
+          "NestOS For Container-容器性能测试"
+        );
+      });
+    });
 
-const iSulad_x86 = [
-  { col1: '100*create', col2: '817', col3: '1083', col4: '3693', col5: '1340', col6: '-25%', col7: '-78%', col8: '-40%' },
-  { col1: '100*start', col2: '1822', col3: '2256', col4: '5947', col5: '3524', col6: '-20%', col7: '-70%', col8: '-49%' },
-  { col1: '100*stop', col2: '328', col3: '507', col4: '1180', col5: '584', col6: '-36%', col7: '-73%', col8: '-44%' },
-  { col1: '100*rm', col2: '839', col3: '896', col4: '1272', col5: '1023', col6: '-7%', col7: '-35%', col8: '-18%' },
-]
-const iSulad_arch = [
-  { col1: '100*create', col2: '558', col3: '614', col4: '1181', col5: '1077', col6: '-10%', col7: '-53%', col8: '-49%' },
-  { col1: '100*start', col2: '1883', col3: '2019', col4: '2927', col5: '2310', col6: '-7%', col7: '-36%', col8: '-19%' },
-  { col1: '100*stop', col2: '268', col3: '334', col4: '388', col5: '2555', col6: '-20%', col7: '-31%', col8: '-853%' },
-  { col1: '100*rm', col2: '428', col3: '547', col4: '555', col5: '694', col6: '-22%', col7: '-23%', col8: '-39%' },
-]
+    function brokenLine(xList, yList, id, title = "折线图") {
+      // 参数解释：
+      // xList => X轴数据
+      // yList => y轴数据
+      // id => 对应html中DOM元素的id
+      // title => 图表标题，非必填
+
+      //每次加载之前，先移除上一次的图表，防止页面跳转后再次返回没有加载图表问题。
+      echarts.init(document.getElementById(id)).dispose();
+
+      //初始化画布
+      let chartEle = echarts.init(document.getElementById(id));
+
+      // 加载数据绘制图表
+      chartEle.setOption({
+        title: { text: title },
+        tooltip: {
+          trigger: "axis",
+        },
+        grid: {
+          left: "2%",
+          right: "2%",
+          containLabel: true,
+        },
+        legend: {
+          bottom: 15,
+          left: "center",
+          icon: "rect",
+          itemHeight: 6,
+          itemWidth: 20,
+        },
+        xAxis: {
+          data: xList,
+        },
+        yAxis: {},
+        series: yList,
+        color: [
+          "#a00000",
+          "#FF0087",
+          "#13663a",
+          "#49C066",
+          "#1450B8",
+          "#37A2FF",
+        ],
+      });
+
+      // 自适应大小
+      window.onresize = function () {
+        chartEle.resize();
+      };
+    }
+    return {
+      goLink,
+      ...toRefs(state),
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -56,23 +140,12 @@ const iSulad_arch = [
   background-color: #fff;
   padding: 20px;
 
-  .table_title {
-    font-size: 16px;
-    font-weight: bold;
-    color: #4d4949;
-  }
-
-  .table {
-    margin: 0 0 16px 0;
-  }
-
   .detail {
     font-size: 14px;
     font-weight: bold;
     color: #4d4949;
 
     .compare_link {
-
       &:hover {
         cursor: pointer;
         color: #002f9c;

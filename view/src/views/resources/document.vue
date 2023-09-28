@@ -1,6 +1,6 @@
 <template>
   <div class="fireContent">
-    <div class="miniContent" v-for="item in docFile">
+    <div class="miniContent" v-for="item in docFile" :key="item">
       <MiniDocs :item="item" />
     </div>
   </div>
