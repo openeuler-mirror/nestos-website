@@ -55,7 +55,7 @@ export default {
     desc1: "独立维护NestOS内核分支，基于openeuler主线版本针对云场景进一步特性增强",
     desc2: "专为NestOS提供的定制化运维管理功能以及全新的架构感知插件特性。",
     desc3: "nestos-kubernetes-deployer简称NKD，是基于NestOS部署kubernetes集群运维而准备的解决方案。",
-    desc4: "Rubik是一个自适应单机算力调优和服务质量保障的容器混部引擎。",
+    desc4: "NestOS For Container版本已预开启Rubik在离线混部相关内核特性，支持基于Rubik容器混部引擎的整体解决方案",
     desc5: "支持以编写Dockerfile形式轻松定制容器镜像格式的系统镜像。",
     desc6: "提供x2NestOS工具，支持将NestOS For Virt或其他通用形态OS转换为不可变模式",
   },
