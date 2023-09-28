@@ -32,7 +32,7 @@ defineProps({
   &-outside {
     position: absolute;
     left: 50%;
-    top: -25%;
+    top: -46%;
     transform: translateX(-50%);
     color: $gray-text;
     opacity: .3;

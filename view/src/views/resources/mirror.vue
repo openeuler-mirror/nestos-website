@@ -2,7 +2,7 @@
   <div class="mirror">
     <img class="bgImg" src="~@/assets/resource/group.png" alt="bgImg">
     <el-collapse accordion class="collapse">
-      <el-collapse-item :name="item.$index" v-for="item in docList">
+      <el-collapse-item :name="item.$index" v-for="item in docList" :key="item">
         <template #title>
           <el-icon class="header-icon">
             <Folder />
@@ -14,10 +14,10 @@
             <el-radio label="aarch64" size="large">aarch64</el-radio>
           </el-radio-group>
           <div v-if="mirrorArch === 'x86_64'" class="linkDiv">
-            <span class="linkSpan" v-for="link in item.x86List" @click="goLink(link)">{{ link.name }}</span>
+            <span class="linkSpan" v-for="link in item.x86List" @click="goLink(link)" :key="link">{{ link.name }}</span>
           </div>
           <div v-else class="linkDiv">
-            <span class="linkSpan" v-for="link in item.armList" @click="goLink(link)">{{ link.name }}</span>
+            <span class="linkSpan" v-for="link in item.armList" @click="goLink(link)" :key="link">{{ link.name }}</span>
           </div>
         </div>
       </el-collapse-item>

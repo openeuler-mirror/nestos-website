@@ -8,8 +8,12 @@ export default {
     nestosTitle: '开启NestOS之旅',
     downloadTitle: '获取NestOS资源',
     issueTitle: '我想对NestOS说',
-    description: 'NestOS云底座操作系统，集成了rpm-ostree支持、ignition配置等技术，采用双根文件系统、原子化更新的设计思路，使用nestos-assembler快速集成构建。并针对K8S、openStack、OKD等平台进行适配，优化容器运行底噪，与centos8相比容器启动速度提升了30%，容器创建速度提升了60%，适合作为以容器化应用为主的云场景基础运行环境。',
-    mainDesc: '目前NestOS已发布22.03-LTS-SP2版本，欢迎大家点击上方【获取NestOS资源】下载体验。',
+    description: '在不断演进的云原生世界中，容器化和虚拟化技术已经成为了现代应用程序交付和管理的关键组成部分。为满足这个不断增长的需求，我们基于NestOS-22.03-LTS-SP2版本全新出发，推出了NestOS For Container 和 NestOS For Virt两个版本，专注于提供最佳的容器主机和虚拟化解决方案。',
+    // mainDesc: '目前NestOS已发布22.03-LTS-SP2版本，欢迎大家点击上方【获取NestOS资源】下载体验。',
+    mainDesc1: '目前NestOS已发布全新版本，欢迎大家',
+    mainDesc2: '，或者有什么',
+    dltext: '下载体验',
+    linksText: '说给NestOS听'
   },
   minititle: {
     //planIn: '年度规划',
@@ -22,19 +26,48 @@ export default {
     docOut: 'DOCUMENTATION',
     resourceIn: '资源',
     resourceOut: 'RESOURCE',
+    versionIn: '版本介绍',
+    versionOut: 'VERSION',
+
   },
+  // arch: {
+  //   title1: '开箱即用的容器平台',
+  //   title2: '简单易用的安装配置过程',
+  //   title3: '安全可靠的包管理方式',
+  //   title4: '友好可控的自动更新机制',
+  //   title5: '紧密配合的双根文件系统',
+  //   character1: 'NestOS集成适配了iSulad、Docker、Podman等主流容器引擎，为用户提供轻量级、定制化的云场景OS。',
+  //   character2: 'NestOS采用ignition技术，可以以相同的配置方便地完成大批量集群结点的安装配置工作。',
+  //   character3: 'NestOS使用rpm-ostree进行软件包管理，搭配openEuler软件包源，确保原子化更新的安全稳定状态。',
+  //   character4: 'NestOS使用zincati提供自动更新服务，可实现节点自动更新与重新引导，实现集群节点有序升级而服务不中断。',
+  //   character5: 'NestOS采用双根文件系统设计，确保NestOS运行期间的完整性与安全性。',
+  // },
+
   arch: {
-    title1: '开箱即用的容器平台',
-    title2: '简单易用的安装配置过程',
-    title3: '安全可靠的包管理方式',
-    title4: '友好可控的自动更新机制',
-    title5: '紧密配合的双根文件系统',
-    character1: 'NestOS集成适配了iSulad、Docker、Podman等主流容器引擎，为用户提供轻量级、定制化的云场景OS。',
-    character2: 'NestOS采用ignition技术，可以以相同的配置方便地完成大批量集群结点的安装配置工作。',
-    character3: 'NestOS使用rpm-ostree进行软件包管理，搭配openEuler软件包源，确保原子化更新的安全稳定状态。',
-    character4: 'NestOS使用zincati提供自动更新服务，可实现节点自动更新与重新引导，实现集群节点有序升级而服务不中断。',
-    character5: 'NestOS采用双根文件系统设计，确保NestOS运行期间的完整性与安全性。',
+    title1: "内核特性增强",
+    title2: "PilotGo插件式运维管理平台",
+    title3: "云原生一体化运维工具",
+    title4: "支持Rubik在离线混部",
+    title5: "轻松定制系统镜像",
+    title6: "不可变模式转换工具",
+    desc1: "独立维护NestOS内核分支，基于openeuler主线版本针对云场景进一步特性增强",
+    desc2: "专为NestOS提供的定制化运维管理功能以及全新的架构感知插件特性。",
+    desc3: "nestos-kubernetes-deployer简称NKD，是基于NestOS部署kubernetes集群运维而准备的解决方案。",
+    desc4: "Rubik是一个自适应单机算力调优和服务质量保障的容器混部引擎。",
+    desc5: "支持以编写Dockerfile形式轻松定制容器镜像格式的系统镜像。",
+    desc6: "提供x2NestOS工具，支持将NestOS For Virt或其他通用形态OS转换为不可变模式",
   },
+  version: {
+    conTitle: 'NestOS For Container 介绍',
+    conDesc: 'NestOS For Container（以下简称NFC）集成了rpm-ostree支持、ignition配置等技术，采用双根文件系统，原子化更新的设计思路，使用nestos-assembler快速集成构建。并针对K8S、openStack等平台进行适配，优化容器运行底噪，使系统具备十分便捷的集群组建能力，可以更安全的运行大规模的容器化工作负载。',
+    virtTitle: 'NestOS For Virt 介绍',
+    virtDesc: `NestOS For Virt（以下简称NFV）是一个专为虚拟化场景而设计的版本，预安装了虚拟化关键组件，其目标是用户可以轻松创建和管理虚拟机，无论是在开发、测试还是生产环境中工作，都能够提供卓越的虚拟化性能，同时可以在高性能的虚拟机上运行各种工作负载，实现资源隔离和安全性。
+
+    无论是运行云原生应用程序、虚拟化环境，还是两者兼顾，NestOS For Container 和 NestOS For Virt 都是理想之选。它们提供了稳定性、性能和安全性，以满足现代数据中心和云环境的要求。`,
+  },
+
+
+
   compare: {
     desc: '使用 NestOS beta 版本横向对比 openEuler21.09、openEuler20.03LTS、Centos8 系统运行 iSulad2.0.10 容器引擎性能。',
     iSulad_x86: 'iSulad（x86_64）测试结果如下：',
