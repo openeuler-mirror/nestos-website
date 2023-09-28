@@ -29,6 +29,13 @@
           :outside-title="t('minititle.resourceOut')"
         />
         <v-resource id="resource" />
+
+        <mini-title
+          :inside-title="t('minititle.partnerIn')"
+          :outside-title="t('minititle.partnerOut')"
+        />
+        <v-partner />
+
       </div>
     </div>
     <v-footer />
@@ -46,6 +53,7 @@ import vBriefly from "./Briefly.vue";
 import vComparision from "./Comparision.vue";
 import vResource from "./Resource.vue";
 import vVersion from "./Version.vue";
+import vPartner from "./Partner.vue";
 import { onMounted } from "vue";
 import AOS from "aos";
 onMounted(() => {

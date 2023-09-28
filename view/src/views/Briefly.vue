@@ -1,13 +1,17 @@
 <template>
   <div class="introduce">
     <div class="introduce-left">
-      <img :src="require('@/assets/cards/cards-work.png')" alt="" />
+      <p><img :src="require('@/assets/cards/cards-work.png')" alt="" /></p>
       <el-button @click="goLink('https://gitee.com/openeuler/NestOS')">{{
         $t(`card.nestosTitle`)
       }}</el-button>
     </div>
     <div class="introduce-right">
-      <p class="introduce-right-normal">{{ $t(`card.description`) }}</p>
+      <p class="introduce-right-normal">
+        {{ $t(`card.description1`) }}
+        <b>{{ $t(`card.description2`) }}</b>
+        {{ $t(`card.description3`) }}
+      </p>
       <p class="introduce-right-main">
         {{ $t(`card.mainDesc1`) }}<span class="text-style" @click="scrollLink()">{{ $t(`card.dltext`) }}</span
         ><span
