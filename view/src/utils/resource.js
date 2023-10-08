@@ -25,11 +25,11 @@ export const docList = [
         path: 'https://nestos.org.cn/nestos20230928/nestos-for-all/aarch64/NestOS-22.03-LTS-SP2.20230928.0.aarch64.iso'
       },
       {
-        name: 'NestOS-22.03-LTS-SP2.20230928 QCOW2下载',
+        name: 'NestOS For Container-22.03-LTS-SP2.20230928 QCOW2下载',
         path: 'https://nestos.org.cn/nestos20230928/nestos-for-container/aarch64/NestOS-For-Container-22.03-LTS-SP2.20230928.0-qemu.aarch64.qcow2'
       },
       {
-        name: 'NestOS-22.03-LTS-SP2.20230928 openStack版本下载',
+        name: 'NestOS For Container-22.03-LTS-SP2.20230928 openStack版本下载',
         path: 'https://nestos.org.cn/nestos20230928/nestos-for-container/aarch64/NestOS-For-Container-22.03-LTS-SP2.20230928.0-openstack.x86_64.qcow2'
       },    
     ]
