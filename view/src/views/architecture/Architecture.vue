@@ -102,7 +102,8 @@ const viewDetail = (index) => {
           display: inline-block;
           font-size: 20px;
           font-weight: bold;
-          color: #4d4949;
+          color: #002fa7;
+          text-shadow: 0 0 #002;
           padding-bottom: 0.4rem;
         }
 
