@@ -16,7 +16,7 @@ export const docList = [
       },
       {
         name: 'NestOS For Container-22.03-LTS-SP2.20230928 openStack版本下载',
-        path: 'https://nestos.org.cn/nestos20230928/nestos-for-container/x86_64/NestOS-For-Container-22.03-LTS-SP2.20230928.0-openstack.aarch64.qcow2'
+        path: 'https://nestos.org.cn/nestos20230928/nestos-for-container/x86_64/NestOS-For-Container-22.03-LTS-SP2.20230928.0-openstack.x86_64.qcow2'
       },     
     ],
     armList: [
@@ -30,7 +30,7 @@ export const docList = [
       },
       {
         name: 'NestOS For Container-22.03-LTS-SP2.20230928 openStack版本下载',
-        path: 'https://nestos.org.cn/nestos20230928/nestos-for-container/aarch64/NestOS-For-Container-22.03-LTS-SP2.20230928.0-openstack.x86_64.qcow2'
+        path: 'https://nestos.org.cn/nestos20230928/nestos-for-container/aarch64/NestOS-For-Container-22.03-LTS-SP2.20230928.0-openstack.aarch64.qcow2'
       },    
     ]
   },
