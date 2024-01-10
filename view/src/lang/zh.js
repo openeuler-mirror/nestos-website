@@ -11,7 +11,7 @@ export default {
     description1: '在不断演进的云原生世界中，容器化和虚拟化技术已经成为了现代应用程序交付和管理的关键组成部分。为满足这个不断增长的需求，我们基于NestOS-22.03-LTS-SP2版本全新出发，正式推出双模式版本，',
     description2: '该版本整合了NestOS For Container 和 NestOS For Virt这两个模式到一个ISO镜像中，',
     description3: '旨在满足云场景中容器化和虚拟化两种主要场景下用户的多样需求，专注于提供最佳的容器主机和虚拟化解决方案。',
-    mainDesc1: '目前NestOS已发布全新版本，欢迎大家',
+    mainDesc1: '目前NestOS-22.03-LTS-SP3版本已发布，欢迎大家',
     mainDesc2: '，或者有什么',
     dltext: '下载体验',
     linksText: '说给NestOS听'
@@ -61,7 +61,7 @@ export default {
   },
   version: {
     conTitle: 'NestOS For Container 介绍',
-    conDesc: 'NestOS For Container（以下简称NFC）集成了rpm-ostree支持、ignition配置等技术，采用双根文件系统，原子化更新的设计思路，使用nestos-assembler快速集成构建。并针对K8S、openStack等平台进行适配，优化容器运行底噪，使系统具备十分便捷的集群组建能力，可以更安全的运行大规模的容器化工作负载。',
+    conDesc: 'NestOS For Container（以下简称NFC,是Fedora CoreOS 在 openEuler 社区的variant版本）集成了rpm-ostree支持、ignition配置等技术，采用双根文件系统，原子化更新的设计思路，使用nestos-assembler快速集成构建。并针对K8S、openStack等平台进行适配，优化容器运行底噪，使系统具备十分便捷的集群组建能力，可以更安全的运行大规模的容器化工作负载。',
     virtTitle: 'NestOS For Virt 介绍',
     virtDesc: `NestOS For Virt（以下简称NFV）是一个专为虚拟化场景而设计的版本，预安装了虚拟化关键组件，其目标是用户可以轻松创建和管理虚拟机，无论是在开发、测试还是生产环境中工作，都能够提供卓越的虚拟化性能，同时可以在高性能的虚拟机上运行各种工作负载，实现资源隔离和安全性。
 
