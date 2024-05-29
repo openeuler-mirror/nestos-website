@@ -10,8 +10,8 @@
         </template>
         <div class="content">
           <el-radio-group v-model="mirrorArch">
-            <el-radio label="x86_64" size="large">x86_64</el-radio>
-            <el-radio label="aarch64" size="large">aarch64</el-radio>
+            <el-radio value="x86_64" size="large">x86_64</el-radio>
+            <el-radio value="aarch64" size="large">aarch64</el-radio>
           </el-radio-group>
           <div v-if="mirrorArch === 'x86_64'" class="linkDiv">
             <span class="linkSpan" v-for="link in item.x86List" @click="goLink(link)" :key="link">{{ link.name }}</span>
