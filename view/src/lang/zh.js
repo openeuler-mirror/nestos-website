@@ -11,7 +11,7 @@ export default {
     description1: '在不断演进的云原生世界中，容器化和虚拟化技术已经成为了现代应用程序交付和管理的关键组成部分。为满足这个不断增长的需求，我们基于NestOS-22.03-LTS-SP2版本全新出发，正式推出双模式版本，',
     description2: '该版本整合了NestOS For Container 和 NestOS For Virt这两个模式到一个ISO镜像中，',
     description3: '旨在满足云场景中容器化和虚拟化两种主要场景下用户的多样需求，专注于提供最佳的容器主机和虚拟化解决方案。',
-    mainDesc1: '目前NestOS-22.03-LTS-SP3版本已发布，欢迎大家',
+    mainDesc1: '目前NestOS-22.03-LTS-SP4版本已发布，欢迎大家',
     mainDesc2: '，或者有什么',
     dltext: '下载体验',
     linksText: '说给NestOS听'

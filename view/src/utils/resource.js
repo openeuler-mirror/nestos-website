@@ -4,6 +4,53 @@
 */
 export const docList = [
   {
+    dateTitle: '【22.03-LTS-SP4】',
+    x86List: [
+      {
+        name: 'NestOS 双模式-22.03-LTS-SP4 ISO下载',
+        path: 'https://nestos.org.cn/nestos20240628/nestos-for-all/x86_64/NestOS-22.03-LTS-SP4.20240628.0.x86_64.iso'
+      },
+      {
+        name: 'NestOS For Virt-22.03-LTS-SP4 ISO下载',
+        path: 'https://nestos.org.cn/nestos20240628/nestos-for-virt/x86_64/NestOS-For-Virt-22.03-LTS-SP4.20240628.0.x86_64.iso'
+      },   
+      {
+        name: 'NestOS For Container-22.03-LTS-SP4 ISO下载',
+        path: 'https://nestos.org.cn/nestos20240628/nestos-for-container/x86_64/NestOS-For-Container-22.03-LTS-SP4.20240628.0-live.x86_64.iso'
+      },  
+      {
+        name: 'NestOS For Container-22.03-LTS-SP4 QCOW2下载',
+        path: 'https://nestos.org.cn/nestos20240628/nestos-for-container/x86_64/NestOS-For-Container-22.03-LTS-SP4.20240628.0-qemu.x86_64.qcow2'
+      },
+      {
+        name: 'NestOS For Container-22.03-LTS-SP4 openStack版本下载',
+        path: 'https://nestos.org.cn/nestos20231231/nestos-for-container/x86_64/NestOS-For-Container-22.03-LTS-SP3.20240110.0-openstack.x86_64.qcow2'
+      },      
+    ],
+    armList: [
+      {
+        name: 'NestOS 双模式-22.03-LTS-SP4 ISO下载',
+        path: 'https://nestos.org.cn/nestos20240628/nestos-for-all/aarch64/NestOS-22.03-LTS-SP4.20240628.0.aarch64.iso'
+      },
+      {
+        name: 'NestOS For Virt-22.03-LTS-SP4 ISO下载',
+        path: 'https://nestos.org.cn/nestos20240628/nestos-for-virt/aarch64/NestOS-For-Virt-22.03-LTS-SP4.20240628.0.aarch64.iso'
+      },   
+      {
+        name: 'NestOS For Container-22.03-LTS-SP4 ISO下载',
+        path: 'https://nestos.org.cn/nestos20240628/nestos-for-container/aarch64/NestOS-For-Container-22.03-LTS-SP4.20240628.0-live.aarch64.iso'
+      },  
+      {
+        name: 'NestOS For Container-22.03-LTS-SP4 QCOW2下载',
+        path: 'https://nestos.org.cn/nestos20240628/nestos-for-container/aarch64/NestOS-For-Container-22.03-LTS-SP4.20240628.0-qemu.aarch64.qcow2'
+      },
+      {
+        name: 'NestOS For Container-22.03-LTS-SP4 openStack版本下载',
+        path: 'https://nestos.org.cn/nestos20240628/nestos-for-container/aarch64/NestOS-For-Container-22.03-LTS-SP4.20240628.0-openstack.aarch64.qcow2'
+      },  
+    ]
+  },
+  {
     dateTitle: '【22.03-LTS-SP3】',
     x86List: [
       {
@@ -212,7 +259,7 @@ export const docList = [
 export const docFile = [
   {
     title: `resource.file.doc`, // 界面文字
-    path: 'https://1.203.97.152/PublicResources/NestOS.pdf', //下载链接
+    path: 'https://gitee.com/openeuler/NestOS/tree/master/docs/zh', //下载链接
     IMG: require('@/assets/resource/illustration-file.png') //背景图小图
   },
   /* {
@@ -228,7 +275,7 @@ export const docFile = [
 export const fireFile = [
   {
     title: `resource.file.other1`,
-    path: 'https://1.203.97.152/nestos-ign/config.ign',
+    path: 'https://nestos.org.cn/nestos-ign/config.ign',
     IMG: require('@/assets/resource/illustration-file.png')
   },
   /* {
