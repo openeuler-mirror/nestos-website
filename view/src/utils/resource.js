@@ -16,15 +16,15 @@ export const docList = [
       },   
       {
         name: 'NestOS For Container-24.03-LTS ISO下载',
-        path: 'https://nestos.org.cn/NestOS-release/prod/streams/2403-LTS/builds/24.03-LTS.20240903.0/nestos-24.03-LTS.20240903.0-live.x86_64.iso'
+        path: 'https://nestos.org.cn/NestOS-release/prod/streams/2403-LTS/builds/24.03-LTS.20240903.0/nestos-24.03-LTS.20240904.0-live.x86_64.iso'
       },  
       {
         name: 'NestOS For Container-24.03-LTS QCOW2下载',
-        path: 'https://nestos.org.cn/NestOS-release/prod/streams/2403-LTS/builds/24.03-LTS.20240903.0/nestos-24.03-LTS.20240903.0-qemu.x86_64.qcow2'
-      },cd 
+        path: 'https://nestos.org.cn/NestOS-release/prod/streams/2403-LTS/builds/24.03-LTS.20240903.0/nestos-24.03-LTS.20240904.0-qemu.x86_64.qcow2'
+      },
       {
         name: 'NestOS For Container-24.03-LTS openStack版本下载',
-        path: 'https://nestos.org.cn/NestOS-release/prod/streams/2403-LTS/builds/24.03-LTS.20240903.0/nestos-24.03-LTS.20240903.0-openstack.x86_64.qcow2'
+        path: 'https://nestos.org.cn/NestOS-release/prod/streams/2403-LTS/builds/24.03-LTS.20240903.0/nestos-24.03-LTS.20240904.0-openstack.x86_64.qcow2'
       },      
     ],
     armList: [
@@ -38,15 +38,15 @@ export const docList = [
       },   
       {
         name: 'NestOS For Container-24.03-LTS ISO下载',
-        path: 'https://nestos.org.cn/NestOS-release/prod/streams/2403-LTS/builds/24.03-LTS.20240903.0/nestos-24.03-LTS.20240903.0-live.aarch64.iso'
+        path: 'https://nestos.org.cn/NestOS-release/prod/streams/2403-LTS/builds/24.03-LTS.20240903.0/nestos-24.03-LTS.20240904.0-live.aarch64.iso'
       },  
       {
         name: 'NestOS For Container-24.03-LTS QCOW2下载',
-        path: 'https://nestos.org.cn/NestOS-release/prod/streams/2403-LTS/builds/24.03-LTS.20240903.0/nestos-24.03-LTS.20240903.0-qemu.aarch64.qcow2'
+        path: 'https://nestos.org.cn/NestOS-release/prod/streams/2403-LTS/builds/24.03-LTS.20240903.0/nestos-24.03-LTS.20240904.0-qemu.aarch64.qcow2'
       },
       {
         name: 'NestOS For Container-24.03-LTS openStack版本下载',
-        path: 'https://nestos.org.cn/NestOS-release/prod/streams/2403-LTS/builds/24.03-LTS.20240903.0/nestos-24.03-LTS.20240903.0-openstack.aarch64.qcow2'
+        path: 'https://nestos.org.cn/NestOS-release/prod/streams/2403-LTS/builds/24.03-LTS.20240903.0/nestos-24.03-LTS.20240904.0-openstack.aarch64.qcow2'
       },  
     ]
   },
